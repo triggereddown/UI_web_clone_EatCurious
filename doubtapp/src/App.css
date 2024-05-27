@@ -1,0 +1,554 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.information {
+  color: aliceblue;
+}
+body {
+  background-color: #042f1a;
+}
+.App-header {
+  background-color: #042f1a;
+  font-family: "Alkatra", cursive;
+  font-family: "Gasoek One", sans-serif;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+#contact {
+  padding: 10px 10px 10px 10px;
+  background-color: #ff73b5;
+  border-radius: 20px 0px 20px 0px;
+}
+.site-logo cursor-hover {
+  width: 20px;
+}
+#mainbodydiv {
+  position: relative;
+}
+.mainbody {
+  background-color: #042f1a;
+}
+.moving-text {
+  padding: 20px 20px 20px 20px;
+  color: #042f1a;
+  font-family: "Gasoek One", sans-serif;
+  font-size: 20px;
+  background-color: #ff73b5;
+  display: flex;
+  justify-content: space-around;
+}
+#meatfree {
+  color: white;
+  font-family: "Gasoek One", sans-serif;
+  font-size: 170px;
+  position: absolute;
+}
+#burger {
+  width: 300px;
+}
+#yourmind {
+  color: white;
+  font-family: "Gasoek One", sans-serif;
+  font-size: 170px;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 20;
+  display: inline-block;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop-animation {
+  animation: pop 1s ease-in-out;
+}
+.pop-animation1 {
+  animation: pop 1.5s ease-in-out;
+}
+.pop-animation2 {
+  animation: pop 2s ease-in-out;
+}
+
+#secondbody {
+  background-color: #ff73b5;
+  display: flex;
+  padding: 150px 80px 150px 80px;
+  width: 100%;
+}
+#secondbodybold {
+  font-family: "Gasoek One", sans-serif;
+  color: #042f1a;
+  font-size: 40px;
+}
+#secondbodyp {
+  color: #042f1a;
+  font-size: 20px;
+}
+#secondbodyparent {
+  padding-right: 60px;
+}
+#secondbodyimg {
+  width: 480px;
+}
+
+#secondbody1 {
+  background-color: white;
+  display: flex;
+  padding: 150px 80px 150px 80px;
+  width: 100%;
+}
+
+#mainaboutdiv {
+  /* overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh; */
+}
+
+/* #secondbody,
+#secondbody1,
+#secondbody2 {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+} */
+
+#secondbodybold1 {
+  padding-top: 100px;
+  font-family: "Gasoek One", sans-serif;
+  color: #042f1a;
+  font-size: 40px;
+}
+#secondbodyp1 {
+  color: #042f1a;
+  font-size: 20px;
+}
+#secondbodyparent1 {
+  padding-right: 60px;
+}
+#secondbodyimg1 {
+  width: 480px;
+}
+#secondbody2 {
+  background-color: #d4ed6d;
+  display: flex;
+  padding: 150px 80px 150px 80px;
+  width: 100%;
+}
+#secondbodybold2 {
+  position: relative;
+  padding-top: 150px;
+  font-family: "Gasoek One", sans-serif;
+  color: #042f1a;
+  font-size: 40px;
+}
+#secondbodyp2 {
+  color: #042f1a;
+  font-size: 20px;
+}
+#secondbodyparent2 {
+  padding-right: 60px;
+}
+#secondbodyimg2 {
+  width: 480px;
+}
+#secondbody3 {
+  background-color: #042f1a;
+  display: flex;
+  padding: 150px 80px 150px 80px;
+  width: 100%;
+}
+#secondbodybold3 {
+  position: relative;
+  padding-top: 150px;
+  font-family: "Gasoek One", sans-serif;
+  color: white;
+  font-size: 40px;
+  padding-left: 60px;
+}
+#secondbodyp3 {
+  color: white;
+  font-size: 20px;
+  padding-left: 60px;
+}
+#secondbodyparent3 {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+#secondbodyimg3 {
+  width: 480px;
+}
+
+#panelmainhead {
+  text-align: center;
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 500;
+  color: #042f1a;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#imgpaneldiv {
+  padding: 0px 60px 0px 60px;
+  background-color: white;
+}
+#smallimgpic {
+  padding-left: 40px;
+  width: 220px;
+}
+#smallimghead {
+  padding-top: 60px;
+  padding-left: 5px;
+  color: #042f1a;
+  font-size: 30px;
+  font-weight: 600;
+}
+#smallimgp {
+  padding-bottom: 60px;
+  font-size: 20px;
+  color: #042f1a;
+  font-weight: 300;
+}
+
+/* CURSOR CODE */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ff73b5;
+  }
+  50% {
+    background-color: #d4ed6d;
+  }
+  100% {
+    background-color: #042f1a;
+  }
+}
+
+/* .swiper-wrapper{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  
+  z-index: 9999;
+}
+
+
+ .swiper-wrapper {
+  animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}   */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.swiper-container {
+  background-color: #ff73b5;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+  animation: scrollText 10s linear infinite;
+  animation-delay: -2s; /* Adjust the delay as needed */
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.swiper-slide h1 {
+  margin-right: 20px;
+}
+
+.swiper-slide:last-child {
+  margin-right: 0;
+}
+
+#secondpartbigdiv {
+  background-color: #042f1a;
+  height: 100vh;
+}
+#secondbodysmalldiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px 40px 20px;
+}
+
+/* #movingcard{
+  background-color:#f95b77;
+  border-radius: 5px;
+  padding-top: 20px ;
+  padding-right: 5px;
+  height: fixed;
+  
+}
+#movingcardhead{
+  font-family:'Gasoek One', sans-serif ;
+  font-size: 70px;
+  color: #042f1a;
+  
+}
+#movingcardhead:hover{
+ 
+}
+#movingcardsmalldiv:hover{
+  animation: movie 5s linear infinite;
+}
+#movingcardimg{
+  padding-left: 50px;
+  width: 100%;
+  
+}
+#movingcardimg:hover{
+  
+}
+@keyframes movie{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-20%);
+  }
+}
+*/
+#container {
+  background-color: #ff73b5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+#scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+#scroll div {
+  display: flex;
+  gap: 2em;
+}
+#scroll p {
+  font-size: 30px;
+  color: white;
+  font-weight: 200;
+}
+#minielement {
+  color: white;
+  padding: 8px 20px 8px 20px;
+  font-family: "Gasoek One", sans-serif;
+  font-size: 20px;
+}
+
+#righttoleft {
+  animation: righttoleft 10s infinite linear;
+}
+
+@keyframes righttoleft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#secondbodysmalldiv {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #042f1a;
+}
+#mainbodyforcurve {
+  background-color: white;
+  height: 400px;
+}
+#green {
+  background-color: #042f1a;
+}
+#curvybody {
+}
+#droolingtext {
+  padding-right: 80px;
+  padding-left: 100px;
+  padding-top: 20px;
+
+  transform: translateY(-66%);
+  z-index: 1;
+}
+
+/* CODE FOR THR SQUARE ANIMATIONS */
+#movingcard {
+  background-color: #f95b77;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+#movingcardsmalldiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#movingcardsmalldiv:hover {
+  animation: scrollDiv 1500ms linear infinite;
+}
+
+@keyframes scrollDiv {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#movingcardhead {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #042f1a;
+  padding: 0px 0px 0px 0px;
+  font-family: "Gasoek One", sans-serif;
+  font-size: 68px;
+  line-height: 60px;
+}
+
+#movingcardimg {
+  width: 280px;
+  height: auto;
+  padding-right: 10px;
+  padding-top: 36px;
+}
+
+#movingcard1 {
+  background-color: #1abe71;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+#movingcard2 {
+  background-color: #ffb500;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+#movingcard3 {
+  background-color: #1abe71;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+#movingcard4 {
+  background-color: #ffb500;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+#movingcard5 {
+  background-color: #1abe71;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-right: 5px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}

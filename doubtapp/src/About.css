@@ -1,0 +1,24 @@
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: colorChange 2s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #ff73b5;
+    }
+    50% {
+      background-color: #d4ed6d;
+    }
+    100% {
+      background-color: #042f1a;
+    }
+  }
